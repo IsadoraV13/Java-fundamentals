@@ -13,12 +13,6 @@ public class Exercise_04 {
     public static void main(String[] args) {
 
         // write code here
-        //TODO: CHAT WITH RYAN ABOUT THIS
-        /*
-        abc
-                abc
-                abc
-                        abc1
-                        */
+
     }
 }
