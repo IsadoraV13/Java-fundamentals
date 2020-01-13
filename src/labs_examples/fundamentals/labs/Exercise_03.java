@@ -10,6 +10,8 @@ package labs_examples.fundamentals.labs;
  *
  */
 
+//small edit
+
 public class Exercise_03 {
 
     public static void main(String[] args) {
