@@ -30,7 +30,7 @@ public class Exercise_02 {
 
         double yy = 10.5;
         int y = (int)yy;
-        System.out.println(y);
+        System.out.println(y + " (information is lost)");
 
     }
 }
