@@ -17,7 +17,17 @@ public class Exercise_01 {
     public static void main(String[] args) {
 
         // write code here
+        int numberOfHouses;
+        double surfaceArea;
+        float HouseToLandRatio;
+        char rating;
 
+        numberOfHouses = 10;
+        surfaceArea = 20.4545;
+        HouseToLandRatio = (float)numberOfHouses / (float)surfaceArea;
+        rating = 'A';
+
+        System.out.println("The number of houses per square km on this " +surfaceArea + " square km stretch of land is " + HouseToLandRatio + " earning this location an " + rating + " star rating." );
     }
 }
 

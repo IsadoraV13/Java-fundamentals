@@ -24,6 +24,13 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int z = 10;
+        double zz = z;
+        System.out.println(zz);
+
+        double yy = 10.5;
+        int y = (int)yy;
+        System.out.println(y);
 
     }
 }
