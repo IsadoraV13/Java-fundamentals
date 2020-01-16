@@ -22,3 +22,52 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+
+Answers:
+    1. Isadoras-MacBook-Pro:CodingNomads isadora$ pwd
+       /Users/isadora/Documents/CodingNomads
+
+    2. Isadoras-MacBook-Pro:CodingNomads isadora$ mkdir Terminal_testing
+       Isadoras-MacBook-Pro:CodingNomads isadora$ ls -al
+       total 16
+       drwxr-xr-x   7 isadora  staff   238 14 Jan 13:04 .
+       drwx------+ 11 isadora  staff   374  9 Jan 15:08 ..
+       -rw-r--r--@  1 isadora  staff  6148  9 Jan 15:09 .DS_Store
+       drwxr-xr-x   2 isadora  staff    68 14 Jan 13:04 Terminal_testing
+       drwxr-xr-x   4 isadora  staff   136 10 Jan 14:10 labs
+       drwxr-xr-x   2 isadora  staff    68  9 Jan 14:29 projects
+       drwxr-xr-x   2 isadora  staff    68  9 Jan 14:29 resources
+
+    3. Isadoras-MacBook-Pro:CodingNomads isadora$ cd Terminal_testing
+       a. Isadoras-MacBook-Pro:Terminal_testing isadora$ touch newFile1.txt newFile2.txt newFile.txt
+
+       b. Isadoras-MacBook-Pro:Terminal_testing isadora$ pwd
+          /Users/isadora/Documents/CodingNomads/Terminal_testing
+
+       c. Isadoras-MacBook-Pro:Terminal_testing isadora$ ls -al
+                    total 0
+                    drwxr-xr-x  5 isadora  staff  170 14 Jan 13:05 .
+                    drwxr-xr-x  7 isadora  staff  238 14 Jan 13:04 ..
+                    -rw-r--r--  1 isadora  staff    0 14 Jan 13:05 newFile.txt
+                    -rw-r--r--  1 isadora  staff    0 14 Jan 13:05 newFile1.txt
+                    -rw-r--r--  1 isadora  staff    0 14 Jan 13:05 newFile2.txt
+
+    4. question 4 is missing :)
+
+    5. Isadoras-MacBook-Pro:Terminal_testing isadora$ mkdir newFolder
+
+    6. Isadoras-MacBook-Pro:Terminal_testing isadora$ mv newFile.txt newFolder
+
+    7. Isadoras-MacBook-Pro:Terminal_testing isadora$ mv newFile1.txt newFolder
+
+    8. a. Isadoras-MacBook-Pro:Terminal_testing isadora$ rm newFile2.txt
+
+       b. Isadoras-MacBook-Pro:Terminal_testing isadora$ rm -r newFolder
+
+    9. a. Isadoras-MacBook-Pro:Terminal_testing isadora$ vim newVim.txt
+
+       b. Isadoras-MacBook-Pro:Terminal_testing isadora$ cat newVim.txt
+          This is random text for the exercise
+
+       c. Isadoras-MacBook-Pro:Terminal_testing isadora$ grep 'exerc' newVim.txt
+          This is random text for the exercise
