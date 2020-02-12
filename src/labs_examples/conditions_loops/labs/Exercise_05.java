@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,31 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter two numbers (separated by a space) between 1 and 100 that are not very close to each other: ");
+        int i = scanner.nextInt();
+        int j = 0;
+        if (scanner.hasNext()) {
+            j = scanner.nextInt();
+        }
+//      how do I do the above iteratively (e.g. if I did not know how many inputs there are)? I have tried:
+//          while(scanner.hasNext())
+//          {
+//              System.out.println(scanner.nextInt());
+//          }
+//      but the program keeps running indefinitely
+        int num = i;
+        int sum = i;
+        while (num <= j-1) {
+            num++;
+            sum += num;
+        }
+        System.out.println("The sum is: " + sum);
+        float ii = i;
+        float jj = j;
+        float av = (ii + jj)/2;
+        System.out.println("The average is: " + av);
+    }
+
 }
