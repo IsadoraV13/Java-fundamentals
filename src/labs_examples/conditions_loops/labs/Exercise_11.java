@@ -22,5 +22,14 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        for (int i = 1; i < 11; i++) {
+            System.out.printf("%3d" , i);
+            for (int j = i * 2; j < i * 11; j += i) {
+                System.out.printf("|" + "%3d" , j);
+            }
+            System.out.println();
+        }
+    }
 
 }
