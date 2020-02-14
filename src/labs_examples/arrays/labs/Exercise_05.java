@@ -9,5 +9,11 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        int [] numArray = {100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90};
 
+        for (int ii = numArray.length - 1; ii >= 0; ii += -2) {
+            System.out.printf("%4d", numArray [ii]);
+        }
+    }
 }
