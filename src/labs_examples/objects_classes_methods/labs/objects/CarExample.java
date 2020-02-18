@@ -63,7 +63,8 @@ class Stereo {
     }
 }
 
-class Car {
+class
+Car {
 
     Engine engine;
 
