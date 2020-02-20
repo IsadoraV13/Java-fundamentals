@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.Arrays;
+
 /**
  *  Reversing an array in place
  *
@@ -12,11 +14,17 @@ package labs_examples.arrays.labs;
  */
 public class Exercise_06 {
     public static void main(String[] args) {
-        int array [] = {1, 2, 3, 4, 5};
-        for (int j = array.length -1; j >= 0; j += -1) {
-            System.out.printf("%3d", array[j]);
-            // can the elements of the array be printed as is or must the output itself be an array?
+        int array [] = {78, 25, 34, 42, 577, 9};
+        for (int j = 0; j < array.length/2; j++) {
+        int memory = array[j];
+        array[j] = array[array.length-1-j];
+        array[array.length-1-j] = memory;
+        System.out.println("//Step " + (j+1) + ": " + Arrays.toString(array));
         }
-
+        System.out.println("Final reversed array: " + Arrays.toString(array));
     }
 }
+
+
+// tips: don't count backwards
+// swap values at indexes, but don't lose the original value: use the extra variable
