@@ -27,7 +27,7 @@ public class Exercise_05 {
             j = scanner.nextInt();
         }
 //      how do I do the above iteratively (e.g. if I did not know how many inputs there are)? I have tried:
-//          while(scanner.hasNext())
+//          while(scanner.hasNext()) //does this need to be while(scanner.hasNextInt())
 //          {
 //              System.out.println(scanner.nextInt());
 //          }

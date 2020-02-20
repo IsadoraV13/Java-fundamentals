@@ -10,10 +10,10 @@ package labs_examples.conditions_loops.labs;
 public class Exercise_06 {
     public static void main(String[] args) {
         int i = 0;
-        int sum = i; //does the sum always need to start with i?
-        while (i <= 99) { //does the max always need to be the upper bound minus 1?
-            i++;
+        int sum = 0;
+        while (i <= 100) {
             sum += i;
+            i++;
         }
         System.out.println(sum);
     }

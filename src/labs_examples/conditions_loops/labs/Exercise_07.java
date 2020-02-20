@@ -18,15 +18,15 @@ public class Exercise_07 {
         System.out.print("Please enter any word of your choice: ");
         String word = scanner.next();
         int i = 0;
-        char [] vowel = {'a', 'o', 'e', 'i', 'u', 'y'};
-        for (char letter : vowel) {
-            while (word.charAt(i) != letter) {
-                i++;
+        char c;
+        String vowels = "aeiou";
+        while (i < word.length()) {
+            c = word.charAt(i);
+            if (vowels.indexOf(c) >= 0) {
+                System.out.println("the first vowel in " + word + " is " + c);
                 break;
             }
-            System.out.println(word);
-            System.out.println(word.charAt(i+1));
-            break;
+            i++;
         }
 
     }
