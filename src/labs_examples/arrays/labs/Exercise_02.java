@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.Scanner;
+
 /**
  *  More labs_examples.arrays
  *
@@ -16,6 +18,17 @@ public class Exercise_02 {
 
         // write code here
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter any number between 1 and 10: ");
+        int input = scanner.nextInt();
+        int i = 0;
+        while (i < array.length) {
+            if (array[i] == input) {
+                System.out.println(i); //why is this unreachable??
+                break;
+            }
+            i++;
 
+        }
     }
 }
