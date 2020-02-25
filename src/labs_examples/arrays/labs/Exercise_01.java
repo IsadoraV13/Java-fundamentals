@@ -17,25 +17,26 @@ public class Exercise_01 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter 10 numbers between 1 and 100, separated by a space: ");
         String numsStrInput = scanner.next();
-        String[] nums = new String [10]; //= numsStrInput.split(" ")
-        System.out.println(numsStrInput.split(" "));
+//        String numsStrInput = "1 17 19 44 56 78 88 67 99 45";
+//        it works when I have this line but not when I use the scanner
+        String[] nums = numsStrInput.split(" ");
+        int sum = 0;
         for (String numsStr : nums) {
-            for (int j = 0; j < nums.length; j++) {
-                numsStr = nums [j];
-                j++;
-            }
-
+            int numsInt = Integer.valueOf(numsStr);
+            sum += numsInt;
         }
-        System.out.println(nums[1]);
-        for (int i = 0; i < nums.length; i++) {
-            int numsInt = Integer.valueOf(nums[i]);
-            int sum = 0;
-            while (i < nums.length) {
-                sum += numsInt;
+        System.out.println(sum);
+//        System.out.println(nums[0]);
+//        for (int i = 0; i < nums.length; i++) {
+//            int numsInt = Integer.valueOf(nums[i]);
+//            int sum = 0;
+//            while (i < nums.length) {
+//                sum += numsInt;
+//            }
+//            System.out.println(sum);
+//        }
 
-            }
-            System.out.println(sum);
-        }
+
 
     }
 
