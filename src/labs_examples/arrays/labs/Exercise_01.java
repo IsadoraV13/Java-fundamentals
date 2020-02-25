@@ -19,23 +19,23 @@ public class Exercise_01 {
         String numsStrInput = scanner.next();
         String[] nums = new String [10]; //= numsStrInput.split(" ")
         System.out.println(numsStrInput.split(" "));
-//        for (String numsStr : nums) {
-//            for (int j = 0; j < nums.length; j++) {
-//                numsStr = nums [j];
-//                j++;
-//            }
-//
-//        }
-//        System.out.println(nums[1]);
-//        for (int i = 0; i < nums.length; i++) {
-//            int numsInt = Integer.valueOf(nums[i]);
-//            int sum = 0;
-//            while (i < nums.length) {
-//                sum += numsInt;
-//
-//            }
-//            System.out.println(sum);
-//        }
+        for (String numsStr : nums) {
+            for (int j = 0; j < nums.length; j++) {
+                numsStr = nums [j];
+                j++;
+            }
+
+        }
+        System.out.println(nums[1]);
+        for (int i = 0; i < nums.length; i++) {
+            int numsInt = Integer.valueOf(nums[i]);
+            int sum = 0;
+            while (i < nums.length) {
+                sum += numsInt;
+
+            }
+            System.out.println(sum);
+        }
 
     }
 
