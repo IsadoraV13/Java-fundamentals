@@ -24,7 +24,7 @@ public class Exercise_02 {
         int i = 0;
         while (i < array.length) {
             if (array[i] == input) {
-                System.out.println(i); //why is this unreachable??
+                System.out.println(i);
                 break;
             }
             i++;

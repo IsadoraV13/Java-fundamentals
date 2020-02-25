@@ -19,7 +19,6 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
-
         int[][] twoDArray = new int[5][5];
         int mulThree = 0;
         for (int i = 0; i < twoDArray.length; i++) {
