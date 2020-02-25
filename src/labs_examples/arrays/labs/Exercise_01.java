@@ -26,17 +26,6 @@ public class Exercise_01 {
             sum += numsInt;
         }
         System.out.println(sum);
-//        System.out.println(nums[0]);
-//        for (int i = 0; i < nums.length; i++) {
-//            int numsInt = Integer.valueOf(nums[i]);
-//            int sum = 0;
-//            while (i < nums.length) {
-//                sum += numsInt;
-//            }
-//            System.out.println(sum);
-//        }
-
-
 
     }
 
