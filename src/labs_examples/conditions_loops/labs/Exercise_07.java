@@ -13,7 +13,7 @@ import java.util.Scanner;
  *          - you'll likely want to use a String that contains all the vowels:
  *              - ie: String vowels = "aeiou";
  *
- */
+ */ //fixing commit
 
 public class Exercise_07 {
     public static void main(String[] args) {
