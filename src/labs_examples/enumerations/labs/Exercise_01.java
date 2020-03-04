@@ -8,3 +8,11 @@ package labs_examples.enumerations.labs;
  *      of this enum from a seperate class.
  */
 
+public class Exercise_01 {
+    public static void main(String[] args) {
+        Menu menuToday = Menu.THU;
+        System.out.println("The following is on the menu today: " + menuToday.getMain() + ", " + menuToday.getSides() + ", "
+                + menuToday.getDessert() + ". ");
+    }
+}
+
