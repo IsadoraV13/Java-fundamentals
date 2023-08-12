@@ -1,6 +1,10 @@
 package labs_examples.arrays.labs;
 
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+import java.util.Arrays;
+>>>>>>> 370e189605428510b5620ce3e36458189ce80c25
 
 /**
  * Arrays calculator

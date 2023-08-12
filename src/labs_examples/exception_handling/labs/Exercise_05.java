@@ -2,6 +2,7 @@ package labs_examples.exception_handling.labs;
 
 import java.util.Scanner;
 
+
 /**
  * Exception Handling Exercise 5:
  *
@@ -28,5 +29,4 @@ public class Exercise_05 {
         System.out.println("Your monthly salary is: £" + totalSalary / numMonths);
     }
 }
-
 
