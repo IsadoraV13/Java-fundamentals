@@ -22,12 +22,13 @@ class Sync {
     public synchronized void syncThreads(Thread thread, int i) {
         for (; i <= 100; i+=2) {
             System.out.println(thread.getName() + " is printing " + i);
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        notify();
-        try {
-            wait();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+            notifyAll();
+
     }
 }

@@ -1,7 +1,12 @@
 
 Without running the code below, please tell me what will print. Why?
 
+ANSWER:
+"Parent called"
+"Child called"
 
+Because the parent class needs to exist before the child class can exist and the creation of the parent leads to
+"Parent called" being printed to the console
 
 
 public class InheritanceTest

@@ -1,7 +1,8 @@
 
 Without running the code below, please tell me what it will print.
 
-
+ANSWER: It will print "Child called" because c is a child object calling the overridding doSomething method
+in the child class
 
 public class InheritanceTest
 {

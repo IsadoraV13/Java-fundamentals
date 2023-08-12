@@ -1,4 +1,4 @@
-package labs_examples.packages.labs.labs_examples.packages.labs.example01;
+package new_package_01;
 
 public class Class_Ex01 {
 }
