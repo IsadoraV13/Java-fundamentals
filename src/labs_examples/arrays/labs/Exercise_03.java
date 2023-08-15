@@ -18,8 +18,6 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-
         int[][] twoDArray = new int[5][5];
         int mulThree = 0;
         for (int i = 0; i < twoDArray.length; i++) {
@@ -30,9 +28,6 @@ public class Exercise_03 {
             System.out.println();
         }
 
-=======
-        
->>>>>>> 370e189605428510b5620ce3e36458189ce80c25
     }
 }
 
