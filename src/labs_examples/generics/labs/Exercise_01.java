@@ -12,10 +12,12 @@ public class Exercise_01  {
 
     public static void main(String[] args) {
         SomeGeneric <String, Integer> item1 = new SomeGeneric<>("13", 13);
-        System.out.println((item1.getObject1().getClass().getSimpleName() == item1.getObject2().getClass().getSimpleName()));
+        System.out.println(item1.getObject1().getClass().getSimpleName());
+        System.out.println(item1.getObject2().getClass().getSimpleName());
 
         SomeGeneric <Double, Integer> item2 = new SomeGeneric<>(13.0, 13);
-        System.out.println((item2.getObject1().getClass().getSimpleName() == item2.getObject2().getClass().getSimpleName()));
+        System.out.println(item2.getObject1().getClass().getSimpleName());
+        System.out.println(item2.getObject2().getClass().getSimpleName());
 
     }
 
