@@ -40,8 +40,6 @@ public class InterfaceExercise_01 {
 
         boolean isOn();
 
-        String getName();
-
         void turnOn();
 
         void turnOff();
@@ -62,22 +60,17 @@ class Printer001 implements InterfaceExercise_01.printable {
         return true;
     }
 
-    @Override
-    public String getName() {
-        String name = "001";
-        return name;
-    }
 
     @Override
     public void turnOn() {
-        System.out.println("Model " + getName() + " has been turned on with the 'Start' button. ");
-        System.out.println(getName() + " is On: " + isOn());
+        System.out.println(this.getClass().getSimpleName() + " has been turned on with the 'Start' button. ");
+        System.out.println(this.getClass().getSimpleName() + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Model " + getName() + " has been turned on with the 'Off' button. ");
-        System.out.println(getName() + " is On: " + isOn(false));
+        System.out.println(this.getClass().getSimpleName()  + " has been turned on with the 'Off' button. ");
+        System.out.println(this.getClass().getSimpleName()  + " is On: " + isOn(false));
     }
 }
 
@@ -94,21 +87,15 @@ class Printer301 implements InterfaceExercise_01.printable {
     }
 
     @Override
-    public String getName() {
-        String name = "301";
-        return name;
-    }
-
-    @Override
     public void turnOn() {
-        System.out.println("Model " + getName() + " has been activated by an item being sent for printing. ");
-        System.out.println(getName() + " is On: " + isOn());
+        System.out.println(this.getClass().getSimpleName() + " has been activated by an item being sent for printing. ");
+        System.out.println(this.getClass().getSimpleName()  + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Item printed. Model " + getName() + " is going to sleep. ");
-        System.out.println(getName() + " is On: " + isOn());
+        System.out.println("Item printed. " + this.getClass().getSimpleName()  + " is going to sleep. ");
+        System.out.println(this.getClass().getSimpleName()  + " is On: " + isOn());
     }
 }
 
@@ -118,21 +105,15 @@ class Printer331 extends Printer301 {
     // Not an override but for variety: does not have its own isPrinting method but implements the parent one
 
     @Override
-    public String getName() {
-        String name = "331";
-        return name;
-    }
-
-    @Override
     public void turnOn() {
-        System.out.println("Model " + getName() + " has been activated by an item being sent for printing. (It can " +
+        System.out.println(this.getClass().getSimpleName()  + " has been activated by an item being sent for printing. (It can " +
                 "be turned off by holding the 'Off' button for 3 seconds). ");
-        System.out.println(getName() + " is On: " + isOn());
+        System.out.println(this.getClass().getSimpleName()  + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Off button held for 3 seconds. Model " + getName() + " is turning off. ");
-        System.out.println(getName() + " is On: " + isOn(false));
+        System.out.println("Off button held for 3 seconds. " + this.getClass().getSimpleName()  + " is turning off. ");
+        System.out.println(this.getClass().getSimpleName()  + " is On: " + isOn(false));
     }
 }
