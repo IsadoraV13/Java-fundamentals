@@ -18,21 +18,27 @@ package labs_examples.interfaces.labs;
  */
 public class InterfaceExercise_01 {
     public static void main(String[] args) {
-        Printer331 somePrinter = new Printer331();
-        System.out.println(somePrinter.getName() + " is printing: " + somePrinter.isOn(true));
-        somePrinter.turnOn();
-        somePrinter.turnOff();
+        Printer001 printerA = new Printer001();
+        printerA.turnOn();
+        printerA.turnOff();
         System.out.println();
 
-        // check that we can pass false to 001 and isPrinting is will be false
-        Printer001 someOtherPrinter = new Printer001();
-        someOtherPrinter.turnOn();
-        someOtherPrinter.turnOff();
+        Printer301 printerB = new Printer301();
+        printerB.turnOn();
+        printerB.turnOff();
+        System.out.println();
+
+        Printer331 printerC = new Printer331();
+        printerC.turnOn();
+        printerC.turnOff();
+
     }
 
 
     public interface printable {
         boolean isOn(boolean isOn);
+
+        boolean isOn();
 
         String getName();
 
@@ -52,6 +58,11 @@ class Printer001 implements InterfaceExercise_01.printable {
     }
 
     @Override
+    public boolean isOn() {
+        return true;
+    }
+
+    @Override
     public String getName() {
         String name = "001";
         return name;
@@ -59,14 +70,14 @@ class Printer001 implements InterfaceExercise_01.printable {
 
     @Override
     public void turnOn() {
-        System.out.println("Model " + getName() + "has been turned on with the 'Start' button. ");
-        System.out.println(getName() + " is printing: " + isOn(true));
+        System.out.println("Model " + getName() + " has been turned on with the 'Start' button. ");
+        System.out.println(getName() + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Model " + getName() + "has been turned on with the 'Off' button. ");
-        System.out.println(getName() + " is printing: " + isOn(false));
+        System.out.println("Model " + getName() + " has been turned on with the 'Off' button. ");
+        System.out.println(getName() + " is On: " + isOn(false));
     }
 }
 
@@ -74,7 +85,12 @@ class Printer301 implements InterfaceExercise_01.printable {
 
     @Override
     public boolean isOn(boolean isOn) {
-        return true; // is always on
+        return isOn;
+    }
+
+    @Override
+    public boolean isOn() {
+        return true;
     }
 
     @Override
@@ -86,11 +102,13 @@ class Printer301 implements InterfaceExercise_01.printable {
     @Override
     public void turnOn() {
         System.out.println("Model " + getName() + " has been activated by an item being sent for printing. ");
+        System.out.println(getName() + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
         System.out.println("Item printed. Model " + getName() + " is going to sleep. ");
+        System.out.println(getName() + " is On: " + isOn());
     }
 }
 
@@ -107,13 +125,14 @@ class Printer331 extends Printer301 {
 
     @Override
     public void turnOn() {
-        System.out.println("Model " + getName() + "has been activated by an item being sent for printing - and can " +
-                "be turned off by holding the 'Off' button for 3 seconds . ");
+        System.out.println("Model " + getName() + " has been activated by an item being sent for printing. (It can " +
+                "be turned off by holding the 'Off' button for 3 seconds). ");
+        System.out.println(getName() + " is On: " + isOn());
     }
 
     @Override
     public void turnOff() {
-        System.out.println("Item printed. Off button held for 3 seconds. Model " + getName() + " going to sleep");
-        System.out.println(getName() + " is printing: " + super.isOn(false));
+        System.out.println("Off button held for 3 seconds. Model " + getName() + " is turning off. ");
+        System.out.println(getName() + " is On: " + isOn(false));
     }
 }
